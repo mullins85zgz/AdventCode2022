@@ -60,9 +60,6 @@ public class Day2_1 {
         catch(Exception e){
             e.printStackTrace();
         }finally{
-            // En el finally cerramos el fichero, para asegurarnos
-            // que se cierra tanto si todo va bien como si salta
-            // una excepcion.
             try{
                 if( null != fr ){
                     fr.close();
