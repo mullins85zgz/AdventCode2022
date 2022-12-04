@@ -38,8 +38,6 @@ public class Day2_1 {
         int aux = 0;
 
         try {
-            // Apertura del fichero y creacion de BufferedReader para poder
-            // hacer una lectura comoda (disponer del metodo readLine()).
             archivo = new File ("D:\\input2.txt");
             fr = new FileReader(archivo);
             br = new BufferedReader(fr);

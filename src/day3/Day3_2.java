@@ -1,4 +1,4 @@
-package day2;
+package day3;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -16,8 +16,6 @@ public class Day3_2 {
         int totalScore=0;
 
         try {
-            // Apertura del fichero y creacion de BufferedReader para poder
-            // hacer una lectura comoda (disponer del metodo readLine()).
             archivo = new File ("D:\\input3.txt");
             fr = new FileReader(archivo);
             br = new BufferedReader(fr);

@@ -1,4 +1,4 @@
-package day2;
+package day3;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -14,8 +14,6 @@ public class Day3_1 {
         int totalScore=0;
 
         try {
-            // Apertura del fichero y creacion de BufferedReader para poder
-            // hacer una lectura comoda (disponer del metodo readLine()).
             archivo = new File ("D:\\input3.txt");
             fr = new FileReader(archivo);
             br = new BufferedReader(fr);
@@ -41,9 +39,6 @@ public class Day3_1 {
         catch(Exception e){
             e.printStackTrace();
         }finally{
-            // En el finally cerramos el fichero, para asegurarnos
-            // que se cierra tanto si todo va bien como si salta
-            // una excepcion.
             try{
                 if( null != fr ){
                     fr.close();

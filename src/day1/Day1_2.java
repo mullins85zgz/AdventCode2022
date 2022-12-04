@@ -22,8 +22,6 @@ public class Day1_2 {
         TreeSet<Integer> miSetOrdenado = new TreeSet<Integer>();
 
         try {
-            // Apertura del fichero y creacion de BufferedReader para poder
-            // hacer una lectura comoda (disponer del metodo readLine()).
             archivo = new File ("D:\\input.txt");
             fr = new FileReader(archivo);
             br = new BufferedReader(fr);
