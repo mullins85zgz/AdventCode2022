@@ -1,5 +1,7 @@
 package day4;
 
+import utils.Constantes;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -14,7 +16,7 @@ public class Day4_1 {
         int totalScore=0;
 
         try {
-            archivo = new File ("D:\\input4.txt");
+            archivo = new File (Constantes.inputRoot + "input4.txt");
             fr = new FileReader(archivo);
             br = new BufferedReader(fr);
 

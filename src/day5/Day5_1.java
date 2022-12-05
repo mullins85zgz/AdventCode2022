@@ -1,5 +1,7 @@
 package day5;
 
+import utils.Constantes;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -56,7 +58,7 @@ public class Day5_1 {
 //        stacks.add(stack3);
 
         try {
-            archivo = new File ("D:\\input5b.txt");
+            archivo = new File (Constantes.inputRoot + "input5b.txt");
             fr = new FileReader(archivo);
             br = new BufferedReader(fr);
 
@@ -84,7 +86,7 @@ public class Day5_1 {
 
         // Ordenacion
         try {
-            archivo = new File ("D:\\input5a.txt");
+            archivo = new File (Constantes.inputRoot + "input5a.txt");
             fr = new FileReader(archivo);
             br = new BufferedReader(fr);
 

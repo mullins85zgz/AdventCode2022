@@ -1,5 +1,7 @@
 package day2;
 
+import utils.Constantes;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -40,7 +42,7 @@ public class Day2_2 {
         int aux = 0;
 
         try {
-            archivo = new File ("D:\\input2.txt");
+            archivo = new File (Constantes.inputRoot +"input2.txt");
             fr = new FileReader(archivo);
             br = new BufferedReader(fr);
 
