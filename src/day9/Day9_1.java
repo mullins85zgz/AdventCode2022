@@ -9,8 +9,7 @@ import java.util.*;
 
 public class Day9_1 {
 
-    final static int TOTAL_GRID=800;
-//    static int[][] grid = new int[TOTAL_GRID][TOTAL_GRID];
+
     static HashMap<String,String> marcados = new HashMap<String,String>();
 //    static int TAIL_X = TOTAL_GRID/2;
     static int TAIL_X = 0;
@@ -41,8 +40,6 @@ public class Day9_1 {
 
 
 
-            //grid[0][0] = 1; //Iniciamos la primera celda
-
             // Lectura del fichero
             String linea;
 
@@ -56,7 +53,7 @@ public class Day9_1 {
 
 
             System.out.println(suma());
-//            pinta();
+
 
         }
         catch(Exception e){
@@ -71,6 +68,12 @@ public class Day9_1 {
             }
         }
     }
+
+    /**
+     * Solucion hardcodeada (funciona pero no vale si aumentas la cuerda, ya que los nudos se mueven respecto al anterior)
+     * La parte 2 funciona tanto para este caso (longitud de cuerda 2) como el que sea, como longitud de cuerda 10
+     * @param linea
+     */
     public static void procesaLinea(String linea){
         String[] valores = linea.split(" ");
         String movimiento = valores[0];
@@ -146,17 +149,7 @@ public class Day9_1 {
         return suma;
     }
 
-    public static void pinta(){
 
-//        for(int i=grid.length-1;i>=0;i--){
-//            int[] filas = grid[i];
-//            for(int valor:filas){
-//                System.out.print("[" + valor +"]");
-//            }
-//            System.out.print("\n");
-//        }
-
-    }
 
 
 }
