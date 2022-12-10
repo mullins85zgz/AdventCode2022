@@ -9,17 +9,10 @@ import java.util.*;
 
 public class Day9_2 {
 
-    final static int TOTAL_GRID=800;
-    //    static int[][] grid = new int[TOTAL_GRID][TOTAL_GRID];
+
     static HashMap<String,String> marcados = new HashMap<String,String>();
-    //    static int TAIL_X = TOTAL_GRID/2;
-    static int TAIL_X = 0;
-    //    static int TAIL_Y = TOTAL_GRID/2;
-    static int TAIL_Y = 0;
-    //    static int HEAD_X = TOTAL_GRID/2;
-    static int HEAD_X = 0;
-    //    static int HEAD_Y = TOTAL_GRID/2;
-    static int HEAD_Y = 0;
+
+
 
     final static String LEFT = "L";
     final static String RIGHT = "R";
@@ -41,7 +34,6 @@ public class Day9_2 {
 
 
 
-            //grid[0][0] = 1; //Iniciamos la primera celda
 
             // Lectura del fichero
             String linea;
