@@ -104,13 +104,13 @@ class Rope{
                         posiciones[j][POS_X] = posiciones[j][POS_X] + 1;
                     }else
                     if (LEFT.equals(movimiento)) {
-                        if (j == 0) posiciones[j][POS_X] = posiciones[j][POS_X] - 1;
+                        posiciones[j][POS_X] = posiciones[j][POS_X] - 1;
                     }else
                     if (DOWN.equals(movimiento)) {
-                        if (j == 0) posiciones[j][POS_Y] = posiciones[j][POS_Y] - 1;
+                        posiciones[j][POS_Y] = posiciones[j][POS_Y] - 1;
                     }else
                     if (UP.equals(movimiento)) {
-                        if (j == 0) posiciones[j][POS_Y] = posiciones[j][POS_Y] + 1;
+                        posiciones[j][POS_Y] = posiciones[j][POS_Y] + 1;
                     }
                 }else{
                     //Ahora debemos detectar el movimiento que tiene que hacer el siguiente
@@ -131,9 +131,9 @@ class Rope{
 
                 //Solo para la "cola"
                 if(j==ROPE_LENGTH-1) {
-                    if(!marcados.containsKey("Y" + posiciones[j][POS_Y] + "X" + posiciones[j][POS_X])) {
-                        System.out.println("CLAVE: [Y " + posiciones[j][POS_Y] + "X " + posiciones[j][POS_X] + "]");
-                    }
+//                    if(!marcados.containsKey("Y" + posiciones[j][POS_Y] + "X" + posiciones[j][POS_X])) {
+//                        System.out.println("CLAVE: [Y " + posiciones[j][POS_Y] + "X " + posiciones[j][POS_X] + "]");
+//                    }
 
                     marcados.put("Y" + posiciones[j][POS_Y] + "X" + posiciones[j][POS_X], "#");
                 }
